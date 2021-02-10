@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreation Hair Studio</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.8.55/css/materialdesignicons.min.css">
+</head>
+
+<body id="home-screen">
+
+    <!-- start of home screen holder -->
+    <section id="home-holder" class="bg-dark">
+        <!-- home screen container -->
+        <div class="text-center position-relative">
+            <div class="image-holder">
+                <img src="assets/img/logo.png" alt="" class="img-fluid w-50">
+            </div>
+            <!-- profile image holder -->
+            <div class="profile position-absolute" data-toggle="modal" data-target="#exampleModal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="notification-icon position-absolute">
+                <button class="btn" onclick="location.href='notification.html'">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.7295 21C13.5537 21.3031 13.3014 21.5547 12.9978 21.7295C12.6941 21.9044 12.3499 21.9965 11.9995 21.9965C11.6492 21.9965 11.3049 21.9044 11.0013 21.7295C10.6977 21.5547 10.4453 21.3031 10.2695 21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                </button>
+
+            </div>
+            <div class="search-holder position-absolute">
+                <input type="search" placeholder="What are you looking for ?">
+                <div class="search-icon position-absolute">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#373737" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21.0004 20.9999L16.6504 16.6499" stroke="#373737" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5 pb-4">
+            <div class="item-block d-grid px-2">
+                <div class="service-item" style="background-image: url('assets/img/facial2.jpg');" data-toggle="modal" data-target="#ratingModal">
+                    <div class="overlay p-4">
+                        <p class="h5">Facial</p>
+                        <p class="mb-0 small">₹3600 - onwards</p>
+                    </div>
+                </div>
+                <div class="service-item" style="background-image: url('assets/img/hair-straightening.png');" onclick="location.href='details.html'">
+                    <div class="overlay p-4">
+                        <p class="h5">Hair Straightening</p>
+                        <p class="mb-0 small">₹3600 - onwards</p>
+                    </div>
+                </div>
+                <div class="service-item" style="background-image: url('assets/img/manicure.jpg');" onclick="location.href='details.html'">
+                    <div class="overlay p-4">
+                        <p class="h5">Manicure</p>
+                        <p class="mb-0 small">₹3600 - onwards</p>
+                    </div>
+                </div>
+                <div class="service-item" style="background-image: url('assets/img/facial.jpg');" onclick="location.href='details.html'">
+                    <div class="overlay p-4">
+                        <p class="h5">Skin Care</p>
+                        <p class="mb-0 small">₹3600 - onwards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of home screen container -->
+    </section>
+    <!-- end of home screen holder -->
+
+
+    <!-- modal -->
+
+
+    <div class="modal fade profilepopup" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Profile</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group bg-transparent">
+                        <li class="list-group-item"> <a href="editprofile.html" class="text-decoration-none ">  <i class="mdi mdi-pencil"></i> Edit profile</a> </li>
+                        <li class="list-group-item"><a href="changepw.html" class="text-decoration-none ">  <i class="mdi mdi-lock-plus"></i> Change Password</a></li>
+                        <li class="list-group-item"><a href="history.html" class="text-decoration-none ">  <i class="mdi mdi-delete-empty"></i>  History</a></li>
+                        <li class="list-group-item"><a href="login.html" class="text-decoration-none ">  <i class="mdi mdi-logout"></i> Logout</a></li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ 
+        <div class="modal" tabindex="-1" id="ratingModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">How satisfied with our Services?</h5>
+                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <ul class="list-unstyled rating-inputs">
+                        <li class="ratings-input-holder"><input type="radio" name="rat" id="i"><label for="i"><img src="assets/img/001-angry.png" alt="" class="img-fluid"></label></li>
+                        <li class="ratings-input-holder"><input type="radio" name="rat" id="ii"><label for="ii"><img src="assets/img/002-shocked.png" alt="" class="img-fluid"></label></li>
+                        <li class="ratings-input-holder"><input type="radio" name="rat" id="iii"><label for="iii"><img src="assets/img/003-shocked-1.png" alt="" class="img-fluid"></label></li>
+                        <li class="ratings-input-holder"><input type="radio" name="rat" id="iv"><label for="iv"><img src="assets/img/005-happy.png" alt="" class="img-fluid"></label></li>
+                        <li class="ratings-input-holder"><input type="radio" name="rat" id="v"><label for="v"><img src="assets/img/004-in-love.png" alt="" class="img-fluid"></label></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link text-decoration-none fw-bold text-muted" data-dismiss="modal">Not now</button>
+                    <button type="button" class="btn btn-link text-decoration-none fw-bold">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+
+    <!-- bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- home script -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
